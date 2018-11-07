@@ -6,14 +6,16 @@
 \maketitle
 
 \section{Background}
-Computer graphics is a topic that has always greatly interested me, especially when it comes to real-time rendering.
-I have always wanted to know how software such as game engines, 3D modelers, and other similar computer graphics software work.
-As an aspiring computer scientist, I strive to learn how such software is not only created, but also designed. 
-I want to learn just how a rendering engine is developed in a software engineering perspective, and to also learn the core components
-of real time rendering.
-A real-time engine display three-dimensional data as images on the computer at an interactive display rate. The display rate is mesaured in frames per second(fps), however for a real-timer renderer the fps should be higher than 15fps for it to be considered smooth.
-Real-time renderes are very important for visualing 3D scenes and enviroment, it takes a great deal of knowledge, and patience to run these computationaly complex software to run consumer grade hardware. It also has you learn how to work with a Graphical Processing Unit(GPU), aswell as the Central Processing Unit(CPU).
-I will be exposed to new concepts such as how lighting, and shadows are implemented in a renderer.
+Creating A rendering engine is a task that requires one to understand multiple different topics and subjects, for example not only will i need to know how lighting works, but how it interacts with other objects, and how to represent it on screen. I will also need to learn how textures work, how to wrap them around an object and how the light will interact with the texture wrapped around the object.
+
+In college i used two piece of software that are called Unreal Engine and Blender. Unreal Engine was a game engine, and Blender was a 3D Creation suite that can be used as a rendering engine.
+My first question when using these softwares where "How does one Create 3D graphics software", then i realised i also was unsure on how someone designs these software.
+
+I want to create a rendering engine that uses core rendering techniuse and features, and Software engineering practices to design the engine. for design I have opted to use different types of litrature such as Designing a Modern Rendering engine \citep{designengine}.  I will also litrature to choose which type of technique I will use to implement my features, this is because there are multiple different ways to implemnt features such as shadows, lighting, and even the way the engine will render a scene.
+
+Rendering engines are still or more specifically rendering is a very interesting field of study. New rendering features are being made to improve quality in 3D animated films, and recently Nvidia released a new Graphics Card to allow Real-Time raytracing in Video Games\footnote{\url{https://www.pcgamer.com/uk/what-is-ray-tracing/}}. Such Acheivments is one that is truly impressive as raytracing is known for being computationaly expensive. 
+
+
 \section{Proposed Work}
 I will be using C++ as my programming language of choice,and OpenGL which is a graphics API that will allow me to create graphics progra
 The goal for creating a rendeirng engine is to manage graphical effects, such as lighting, shadows, texture mapping, and to apply them to a 3D scene and have them interact with other 3D objects. A rendering engine should not be confused with a game engine which would have me implement a physics system, and an animation system aswell.
@@ -115,3 +117,4 @@ This will be a Software engineering project
 \noindent
 \rotatebox{90}
 {\input{Gantt}}
+
