@@ -1,3 +1,12 @@
+\pdfminorversion=4
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,latexsym,amsmath}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\begin{document}
+
 %!TeX root=TermsOfReference.tex
 \title{KV6003: Individual Project\\ Project Terms Of Reference}
 \author{Cuthfbert Mutumbwa\\ Design and Implement a Rendering Engine}
@@ -6,22 +15,29 @@
 \maketitle
 
 \section{Background}
-Creating A rendering engine is a task that requires one to understand multiple different topics and subjects, for example not only will i need to know how lighting works, but how it interacts with other objects, and how to represent it on screen. I will also need to learn how textures work, how to wrap them around an object and how the light will interact with the texture wrapped around the object.
-
-In college i used two piece of software that are called Unreal Engine and Blender. Unreal Engine was a game engine, and Blender was a 3D Creation suite that can be used as a rendering engine.
-My first question when using these softwares where "How does one Create 3D graphics software", then i realised i also was unsure on how someone designs these software.
-
-I want to create a rendering engine that uses core rendering techniuse and features, and Software engineering practices to design the engine. for design I have opted to use different types of litrature such as Designing a Modern Rendering engine \citep{designengine}.  I will also litrature to choose which type of technique I will use to implement my features, this is because there are multiple different ways to implemnt features such as shadows, lighting, and even the way the engine will render a scene.
-
-Rendering engines are still or more specifically rendering is a very interesting field of study. New rendering features are being made to improve quality in 3D animated films, and recently Nvidia released a new Graphics Card to allow Real-Time raytracing in Video Games\footnote{\url{https://www.pcgamer.com/uk/what-is-ray-tracing/}}. Such Acheivments is one that is truly impressive as raytracing is known for being computationaly expensive. 
-
+Creating A rendering engine is a task that requires one to understand multiple different topics and subjects, for example not only will I need to know how lighting works, but how it interacts with other objects, and how to represent it on screen. I will also need to learn how textures work, how to wrap them around an object and how the light will interact with the texture wrapped around the object.
+I will also learn how a modern GPU, by writing code for it, as well as understand what role the CPU will have when drawing the 3D images.
+\\\\
+In college, I used two pieces of software that are called Unreal Engine and Blender. Unreal Engine was a game engine, and Blender was a 3D Creation suite that can be used as a rendering engine.
+My first question when using this software where "How does one Create 3D graphics software", then I realized I also was unsure of how someone designs this software.
+\\
+I want to create a rendering engine that uses core rendering techniques and features, and Software engineering practices to design the engine. for the design aspect, I have opted to use different types of literature such as Designing a Modern Rendering engine \cite{designengine} to help me.  I will also literature to choose which type of technique I will use to implement my features, this is because there are multiple different ways to implement features such as shadows, lighting, and even the way the engine will render a scene.
+\\\\
+Rendering engines are still or more specifically rendering is a very interesting field of study. New rendering features are being made to improve quality in 3D animated films, and recently Nvidia released a new Graphics Card to allow Real-Time raytracing in Video Games\footnote{\url{https://www.pcgamer.com/uk/what-is-ray-tracing/}}. Such an Achievement is one that is truly impressive as raytracing is known for being computationally expensive. 
+\\\\
+Creating a rendering engine is not only about knowing how to write good and efficient code, and knowing how lights, shadows, and texturing works are not enough. I will need to understand the underlining mathematical principles of computer graphics such as vectors, matrices and more. I will need to be able to read mathematical notation, as well as choose which formulas I will use to achieve the results I want.
+I want to improve my mathematical skills, as well as know, learn what types of maths is needed to achieve this I have picked out literature and books such as  Game Physics Cookbook \cite{gamephysics}. This book teaches the reader the maths needed to make the rendering engine.
 
 \section{Proposed Work}
-I will be using C++ as my programming language of choice,and OpenGL which is a graphics API that will allow me to create graphics progra
-The goal for creating a rendeirng engine is to manage graphical effects, such as lighting, shadows, texture mapping, and to apply them to a 3D scene and have them interact with other 3D objects. A rendering engine should not be confused with a game engine which would have me implement a physics system, and an animation system aswell.
+For the design phase I will use UML diagrams to help me conceptualize the rendering engine, and use them as a reference when creating the product. I will also incorporate a software Development life cycle to allow me to justify my choices, and allow me to see if I am on track to finishing the product.
+I will create a 3D scene environment that will showcase the features I plan on implementing. The user will be allowed to freely move around the 3D scene environment. The user will see different showcases on features within this scene, for example, there may be a location where the user is able to an object reflection from another object, and a location that demonstrates shadows by casting a light above the object.
 
-I wish to build an engine with a 3D scene that will showcase various graphics effects. I want to be able to move around the 3D space using a camera, so i can be able to look at the scene at different perspective.I want to be able to turn toggle of, and on certain features to be able to show what the scene will look like without them, for example toggling off shadows to show how they may impact the scene visually.
-
+Since there are many types of ways to implement one feature, in my design phase I have to consider what the best way to implement a specific feature will be. I need to make sure that it fits my criteria, and that I am able to implement the feature, while also making sure it is in scope. The analysis will be an essential part of not only the design phase but the implementation phase as well.
+To Aid me I will use literature such Learning OpenGL \footnote{\url{https://learnopengl.com/book/learnopengl_book.pdf}}
+I will also create small a prototype of the project while in the design phase, this will further help me define the scope of the project, as well as aid me in my design decisions.
+\\\\
+I will be writing the rendering engine using C++, and the reason I chose this language is that I am the most familiar with it. I will be using the OpenGL API, this will allow me to send commands to different kinds of graphics devices\cite{designengine}. I also chose OpenGL because it is widely used and has many books and references such as OpenGL Programming Guide: The Official Guide to Learning OpenGL\cite{opengl30}. 
+For debugging I have already chosen to use Nvidia Nsight for visual studio \footnote{\url{https://developer.nvidia.com/nsight-visual-studio-edition}}. This debugging tool is compatible with my editor of choice (visual studio) and is also recommended by The Khronos Group \footnote{\url{https://www.khronos.org/OpenGL/wiki/Debugging_Tools}} who are the contributor to the OpenGL API \footnote{\url{https://en.wikipedia.org/wiki/Khronos_Group}}
 
 \section{Aims and Objectives}
 Aims
@@ -32,18 +48,19 @@ Aims
 
 Objectives
 \begin{enumerate}
-  \item Use software engineering design principles to implement the renderer.
-  \item Learn the required theory that will be needed to further understand my project.
+  \item Create 3 UML diagrams.
+  \item use a Software Development life cycle
+  \item Implement a 3D scene enviroment to showcase the implemented features.
   \item Implement lighting in scene.
   \item Implement Shadows in scene.
   \item Implement Shaders in scene.
   \item Implement Skybox in scene.
   \item Implement Reflections in scene.
   \item Implement Texturing in scene.
-  \item Implement a 3D scene enviroment to showcase the implemented features.
-  \item Implement Model Loading into scene.
+  \item Implement Model Loading.
   \item Test and debug the system using tools specific for graphics programming.  
 \end{enumerate}
+The 3 UML Diagrams I will be creating will be Class Diagram, Sequence Diagrams, and State Machine Diagram. The 8 Features i will implement will be showcased within the scene enviroment. For testing and debugging i will generate a test plan.
 \section{Skills}
 \begin{enumerate}
 	\item Programming in C/C++ (from module KF4006 )
@@ -52,7 +69,7 @@ Objectives
 	\item OpenGL API (Learnt enough to build a 3D scene) 
 	\item Computer Graphics Theory (Currently Learning in Module KF6018)
 \end{enumerate}
-
+I am confident I have a good foundation for each of these skills, however, I have many resources such as books that will not only aid me but further improve my knowledge on each of these skills. 
 \section{Resources}
 Hardware
 \begin{itemize}
@@ -118,3 +135,6 @@ This will be a Software engineering project
 \rotatebox{90}
 {\input{Gantt}}
 
+
+
+\end{document}
