@@ -27,11 +27,11 @@ Rendering engines are still or more specifically rendering is a very interesting
 \\\\
 Creating a rendering engine is not only about knowing how to write good and efficient code, and knowing how lights, shadows, and texturing works are not enough. I will need to understand the underlining mathematical principles of computer graphics such as vectors, matrices and more. I will need to be able to read mathematical notation, as well as choose which formulas I will use to achieve the results I want.
 I want to improve my mathematical skills, as well as know, learn what types of maths is needed to achieve this I have picked out literature and books such as  Game Physics Cookbook \cite{gamephysics}. This book teaches the reader the maths needed to make the rendering engine.
-
+\\\\\\\\\\\\
 \section{Proposed Work}
 For the design phase I will use UML diagrams to help me conceptualize the rendering engine, and use them as a reference when creating the product. I will also incorporate a software Development life cycle to allow me to justify my choices, and allow me to see if I am on track to finishing the product.
 I will create a 3D scene environment that will showcase the features I plan on implementing. The user will be allowed to freely move around the 3D scene environment. The user will see different showcases on features within this scene, for example, there may be a location where the user is able to an object reflection from another object, and a location that demonstrates shadows by casting a light above the object.
-
+\\\\
 Since there are many types of ways to implement one feature, in my design phase I have to consider what the best way to implement a specific feature will be. I need to make sure that it fits my criteria, and that I am able to implement the feature, while also making sure it is in scope. The analysis will be an essential part of not only the design phase but the implementation phase as well.
 To Aid me I will use literature such Learning OpenGL \footnote{\url{https://learnopengl.com/book/learnopengl_book.pdf}}
 I will also create small a prototype of the project while in the design phase, this will further help me define the scope of the project, as well as aid me in my design decisions.
@@ -43,33 +43,31 @@ For debugging I have already chosen to use Nvidia Nsight for visual studio \foot
 Aims
 \begin{itemize}
   \item To Build a Rendering Engine
-  \item To design a maintanable piece of software using modern design principles
+  \item To design a maintainable piece of software using modern design principles
 \end{itemize}
-
+\\
 Objectives
 \begin{enumerate}
   \item Create 3 UML diagrams.
-  \item use a Software Development life cycle
-  \item Implement a 3D scene enviroment to showcase the implemented features.
-  \item Implement lighting in scene.
-  \item Implement Shadows in scene.
-  \item Implement Shaders in scene.
-  \item Implement Skybox in scene.
-  \item Implement Reflections in scene.
-  \item Implement Texturing in scene.
+  \item Implement lighting.
+  \item Implement Shadows.
+  \item Implement Shaders.
+  \item Implement a Skybox.
+  \item Implement Reflections.
+  \item Implement Texturing.
   \item Implement Model Loading.
   \item Test and debug the system using tools specific for graphics programming.  
 \end{enumerate}
-The 3 UML Diagrams I will be creating will be Class Diagram, Sequence Diagrams, and State Machine Diagram. The 8 Features i will implement will be showcased within the scene enviroment. For testing and debugging i will generate a test plan.
+The 3 UML Diagrams I will be creating will be Class Diagram, Sequence Diagrams, and State Machine Diagram. The 8 Features I will implement will be showcased within the scene environment. For testing and debugging I will generate a test plan.
 \section{Skills}
 \begin{enumerate}
-	\item Programming in C/C++ (from module KF4006 )
-	\item Software Engineering (from module KF5012)
-	\item Algorithms (from module KF5008) 
-	\item OpenGL API (Learnt enough to build a 3D scene) 
-	\item Computer Graphics Theory (Currently Learning in Module KF6018)
+    \item Programming in C/C++ (from module KF4006 )
+    \item Software Engineering (from module KF5012)
+    \item Algorithms (from module KF5008) 
+    \item OpenGL API (Learnt enough to build a 3D scene) 
+    \item Computer Graphics Theory (Currently Learning in Module KF6018)
 \end{enumerate}
-I am confident I have a good foundation for each of these skills, however, I have many resources such as books that will not only aid me but further improve my knowledge on each of these skills. 
+I am confident I have a good foundation for each of these skills, however, I have many resources such as books that will not only aid me but further improve my knowledge on the subject. 
 \section{Resources}
 Hardware
 \begin{itemize}
@@ -81,50 +79,83 @@ Software
   \item Visual Studio
   \item Nvidia Nsight
 \end{itemize}
-Visual studio will be my IDE that will allow for me to write the rendering engine code.
+Visual Studio will be the IDE that will allow me to write the rendering engine code.
 Nvidia Nsight is a graphics debugger and will not only help me debugging the code but to also help me with the test plan.
 \section{Structure and Contents of Project Report}
 Planned Chapters
 \begin{enumerate}
-  \item Designing the Renderer (Analysis)
-  \item Implementing the Rendering Engine (Synthesis)
-  \item Creating the Scene enviroment (Synthesis)
-  \item Testing and Debugging using bespoke Software(Synthesis)
-  \item Evaluating the Rendering Engine (Evaluation)
+  \item Designing the Renderer (Analysis)-This Chapter will explain what techniques and tools did I use to design the renderer. 
+  \item Implementing the Rendering Engine (Synthesis)-This Chapter will explain how I actually created the renderer. It will allow me to justify my choices, as to why I chose to implement certain features the way I did. It will also allow me to show my understanding of the topic.
+ 
+  \item Evaluating the Rendering Engine (Evaluation)-I will furthermore justify my choices as well as evaluate on my work. I will talk about what I believe I did right, and what I would have done differently.
 \end{enumerate}
 
 \section{Marking Scheme}
 \paragraph{Project Type}Software Engineering projects
-
-\paragraph{Project Report} 
-\begin{enumerate}
+\paragraph{Project Report}Chapters \\
+\\
+Analysis 
+\begin{itemize}
   \item Designing the Renderer
   \item Analysing Rendering Techniques
-\end{enumerate}
-
+\end{itemize}
+\\
 Synthesis 
-\begin{enumerate}
+\begin{itemize}
   \item Implementing the Rendering Engine
-  \item Creating the Scene enviroment
+  \item Creating the Scene environment
   \item Testing and Debugging using bespoke Software
-\end{enumerate}
-
+\end{itemize}
+\\
 Evaluation
-\begin{enumerate}
-    \item Evaluating the Rendering Engine
-\end{enumerate}
+\begin{itemize}
+    \item Evaluation and Conclusion of the Rendering Engine
+\end{itemize}
+
 
 
 \paragraph{Product}
+\\
 Deliverables list
 \begin{enumerate}
-    \item UML Diagram
-    \item Rendering Engine Source Code 
+    \item Source Code 
+    \item Design Documents
+    \item UML
     \item Test Plans
 \end{enumerate}
+The design document includes anything related to design such as UML diagrams, requirement analysis etc.
+
+\paragraph{Fitness of purpose and Build quality} Lists
+\\\\
+Fitness of Purpose
+\begin{enumerate}
+  \item Quality of Functionality
+  \item Meeting of Requirements as identified during project
+\end{enumerate}
+\\
+Build Quality
+\begin{enumerate}
+  \item Code Quality
+  \item Software is responsive
+  \item Test plan and results
+  \item Design documents were created correctly
+\end{enumerate}
+The code quality must have multiple classes, and each class corresponding with the class diagram. 
+Software must not stutter when the user attempts to move the camera view around the scene.
+Design documents must not use wrong notation.
+Test plans must be thorough and show which problems managed to be fixed
+\\\\
+\paragraph{Precentage} Breakdown\\
+Fitness for Purpose: 40\% \\ Build Quality 50\%
 
 \section{List of Appendices}
-Will Add soon
+\begin{enumerate}
+    \item Finalised UML Diagrams
+    \item Test Plan
+    \item screenshots of the Rendering Engine
+\end{enumerate}
+Having screenshots of the rendering engine will allow me to show and further explain certain aspects of my engine.
+Showing my finalized UML diagrams will allow me to show how helpful they were in the creation of the software.
 
 \section{Project Type}
 This will be a Software engineering project
