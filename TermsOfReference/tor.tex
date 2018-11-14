@@ -1,13 +1,5 @@
-\pdfminorversion=4
-\documentclass[]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amssymb,latexsym,amsmath}
-\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage{graphicx}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\begin{document}
-
 %!TeX root=TermsOfReference.tex
+
 \title{KV6003: Individual Project\\ Project Terms Of Reference}
 \author{Cuthfbert Mutumbwa\\ Design and Implement a Rendering Engine}
 \date{\today}
@@ -21,12 +13,12 @@ I will also learn how a modern GPU, by writing code for it, as well as understan
 In college, I used two pieces of software that are called Unreal Engine and Blender. Unreal Engine was a game engine, and Blender was a 3D Creation suite that can be used as a rendering engine.
 My first question when using this software where "How does one Create 3D graphics software", then I realized I also was unsure of how someone designs this software.
 \\
-I want to create a rendering engine that uses core rendering techniques and features, and Software engineering practices to design the engine. for the design aspect, I have opted to use different types of literature such as Designing a Modern Rendering engine \cite{designengine} to help me.  I will also literature to choose which type of technique I will use to implement my features, this is because there are multiple different ways to implement features such as shadows, lighting, and even the way the engine will render a scene.
+I want to create a rendering engine that uses core rendering techniques and features, and Software engineering practices to design the engine. for the design aspect, I have opted to use different types of literature such as Designing a Modern Rendering engine \citep{designengine} to help me.  I will also literature to choose which type of technique I will use to implement my features, this is because there are multiple different ways to implement features such as shadows, lighting, and even the way the engine will render a scene.
 \\\\
 Rendering engines are still or more specifically rendering is a very interesting field of study. New rendering features are being made to improve quality in 3D animated films, and recently Nvidia released a new Graphics Card to allow Real-Time raytracing in Video Games\footnote{\url{https://www.pcgamer.com/uk/what-is-ray-tracing/}}. Such an Achievement is one that is truly impressive as raytracing is known for being computationally expensive. 
 \\\\
 Creating a rendering engine is not only about knowing how to write good and efficient code, and knowing how lights, shadows, and texturing works are not enough. I will need to understand the underlining mathematical principles of computer graphics such as vectors, matrices and more. I will need to be able to read mathematical notation, as well as choose which formulas I will use to achieve the results I want.
-I want to improve my mathematical skills, as well as know, learn what types of maths is needed to achieve this I have picked out literature and books such as  Game Physics Cookbook \cite{gamephysics}. This book teaches the reader the maths needed to make the rendering engine.
+I want to improve my mathematical skills, as well as know, learn what types of maths is needed to achieve this I have picked out literature and books such as  Game Physics Cookbook \citep{mathphysics}. This book teaches the reader the maths needed to make the rendering engine.
 \\\\\\\\\\\\
 \section{Proposed Work}
 For the design phase I will use UML diagrams to help me conceptualize the rendering engine, and use them as a reference when creating the product. I will also incorporate a software Development life cycle to allow me to justify my choices, and allow me to see if I am on track to finishing the product.
@@ -36,17 +28,17 @@ Since there are many types of ways to implement one feature, in my design phase 
 To Aid me I will use literature such Learning OpenGL \footnote{\url{https://learnopengl.com/book/learnopengl_book.pdf}}
 I will also create small a prototype of the project while in the design phase, this will further help me define the scope of the project, as well as aid me in my design decisions.
 \\\\
-I will be writing the rendering engine using C++, and the reason I chose this language is that I am the most familiar with it. I will be using the OpenGL API, this will allow me to send commands to different kinds of graphics devices\cite{designengine}. I also chose OpenGL because it is widely used and has many books and references such as OpenGL Programming Guide: The Official Guide to Learning OpenGL\cite{opengl30}. 
+I will be writing the rendering engine using C++, and the reason I chose this language is that I am the most familiar with it. I will be using the OpenGL API, this will allow me to send commands to different kinds of graphis devices\citep{designengine}. I also chose OpenGL because it is widely used and has many books and references such as OpenGL Programming Guide: The Official Guide to Learning OpenGL\cite{opengl30}. 
 For debugging I have already chosen to use Nvidia Nsight for visual studio \footnote{\url{https://developer.nvidia.com/nsight-visual-studio-edition}}. This debugging tool is compatible with my editor of choice (visual studio) and is also recommended by The Khronos Group \footnote{\url{https://www.khronos.org/OpenGL/wiki/Debugging_Tools}} who are the contributor to the OpenGL API \footnote{\url{https://en.wikipedia.org/wiki/Khronos_Group}}
 
 \section{Aims and Objectives}
-Aims
+\paragraph{Aims}
 \begin{itemize}
   \item To Build a Rendering Engine
   \item To design a maintainable piece of software using modern design principles
 \end{itemize}
 \\
-Objectives
+\paragraph{Objectives}
 \begin{enumerate}
   \item Create 3 UML diagrams.
   \item Implement lighting.
@@ -69,12 +61,12 @@ The 3 UML Diagrams I will be creating will be Class Diagram, Sequence Diagrams, 
 \end{enumerate}
 I am confident I have a good foundation for each of these skills, however, I have many resources such as books that will not only aid me but further improve my knowledge on the subject. 
 \section{Resources}
-Hardware
+\paragraph{Hardware}
 \begin{itemize}
   \item Computer
   
 \end{itemize}
-Software
+\paragraph{Software}
 \begin{itemize}
   \item Visual Studio
   \item Nvidia Nsight
@@ -82,7 +74,7 @@ Software
 Visual Studio will be the IDE that will allow me to write the rendering engine code.
 Nvidia Nsight is a graphics debugger and will not only help me debugging the code but to also help me with the test plan.
 \section{Structure and Contents of Project Report}
-Planned Chapters
+\paragraph{Planned Chapters}
 \begin{enumerate}
   \item Designing the Renderer (Analysis)-This Chapter will explain what techniques and tools did I use to design the renderer. 
   \item Implementing the Rendering Engine (Synthesis)-This Chapter will explain how I actually created the renderer. It will allow me to justify my choices, as to why I chose to implement certain features the way I did. It will also allow me to show my understanding of the topic.
@@ -94,29 +86,27 @@ Planned Chapters
 \paragraph{Project Type}Software Engineering projects
 \paragraph{Project Report}Chapters \\
 \\
-Analysis 
+\paragraph{Analysis} 
 \begin{itemize}
   \item Designing the Renderer
   \item Analysing Rendering Techniques
 \end{itemize}
 \\
-Synthesis 
+\paragraph{Synthesis} 
 \begin{itemize}
   \item Implementing the Rendering Engine
   \item Creating the Scene environment
   \item Testing and Debugging using bespoke Software
 \end{itemize}
 \\
-Evaluation
+\paragraph{Evaluation}
 \begin{itemize}
     \item Evaluation and Conclusion of the Rendering Engine
 \end{itemize}
 
 
 
-\paragraph{Product}
-\\
-Deliverables list
+\paragraph{Product Deliverables list}
 \begin{enumerate}
     \item Source Code 
     \item Design Documents
@@ -125,15 +115,15 @@ Deliverables list
 \end{enumerate}
 The design document includes anything related to design such as UML diagrams, requirement analysis etc.
 
-\paragraph{Fitness of purpose and Build quality} Lists
+\paragraph{Fitness of purpose and Build quality} 
 \\\\
-Fitness of Purpose
+\paragraph{Fitness of Purpose}
 \begin{enumerate}
   \item Quality of Functionality
   \item Meeting of Requirements as identified during project
 \end{enumerate}
 \\
-Build Quality
+\paragraph{Build Quality}
 \begin{enumerate}
   \item Code Quality
   \item Software is responsive
@@ -143,8 +133,7 @@ Build Quality
 The code quality must have multiple classes, and each class corresponding with the class diagram. 
 Software must not stutter when the user attempts to move the camera view around the scene.
 Design documents must not use wrong notation.
-Test plans must be thorough and show which problems managed to be fixed
-\\\\
+Test plans must be thorough and show which problems managed to be fixed.
 \paragraph{Precentage} Breakdown\\
 Fitness for Purpose: 40\% \\ Build Quality 50\%
 
@@ -159,11 +148,19 @@ Showing my finalized UML diagrams will allow me to show how helpful they were in
 
 \section{Project Type}
 This will be a Software engineering project
+\\Report:  40\% 
+\\Product: 50\% 
+\\viva:    10\% 
+\\total    100%
 \section{Project Plan}
+
 \noindent
 \rotatebox{90}
 {\input{Gantt}}
+\\\\
+I have made sure no to have  more than two task overlap with each other, as any more may result confusion when working.
+\bibliographystyle{plainnat}
 
-
+\bibliography{ref}
 
 \end{document}
